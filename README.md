@@ -80,5 +80,6 @@ elegance/
 
 ## Contact
 
-Your Name -mohanabandlamudi77@gmail.com
+Mohana Sai Sree Bandlamudi
+mohanabandlamudi77@gmail.com
 Project Link: https://github.com/mohanabandlamudi/Elegance 
