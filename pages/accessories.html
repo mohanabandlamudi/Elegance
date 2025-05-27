@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessories - Elegance Jewelry</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        .product-page {
+            margin-top: 80px;
+            padding: 2rem 5%;
+        }
+
+        .filters {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin-bottom: 2rem;
+        }
+
+        .filter-group {
+            margin-bottom: 1rem;
+        }
+
+        .filter-group h3 {
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+
+        .filter-options {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .filter-option {
+            padding: 0.5rem 1rem;
+            background: #f5f5f5;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .filter-option:hover, .filter-option.active {
+            background: #c8a97e;
+            color: white;
+        }
+
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        .sort-options {
+            display: flex;
+            justify-content: flex-end;
+            margin-bottom: 2rem;
+        }
+
+        .sort-select {
+            padding: 0.5rem 1rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background: white;
+        }
+
+        .pagination {
+            display: flex;
+            justify-content: center;
+            gap: 0.5rem;
+            margin-top: 3rem;
+        }
+
+        .page-button {
+            padding: 0.5rem 1rem;
+            border: 1px solid #ddd;
+            background: white;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .page-button:hover, .page-button.active {
+            background: #c8a97e;
+            color: white;
+            border-color: #c8a97e;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>Elegance</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="chains.html">Chains</a></li>
+                <li><a href="bracelets.html">Bracelets</a></li>
+                <li><a href="earrings.html">Earrings</a></li>
+                <li><a href="accessories.html" class="active">Rings</a></li>
+            </ul>
+            <div class="nav-icons">
+                <a href="#" class="search-icon"><i class="fas fa-search"></i></a>
+                <a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i><span class="cart-count">0</span></a>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main class="product-page">
+        <h1>Rings Collection</h1>
+        
+        <div class="filters">
+            <div class="filter-group">
+                <h3>Category</h3>
+                <div class="filter-options">
+                    <button class="filter-option active">All</button>
+                    <button class="filter-option">Rings</button>
+                    <button class="filter-option">Anklets</button>
+                    <button class="filter-option">Hair Accessories</button>
+                    <button class="filter-option">Jewelry Boxes</button>
+                </div>
+            </div>
+            
+            <div class="filter-group">
+                <h3>Material</h3>
+                <div class="filter-options">
+                    <button class="filter-option active">All</button>
+                    <button class="filter-option">Gold</button>
+                    <button class="filter-option">Silver</button>
+                    <button class="filter-option">Rose Gold</button>
+                    <button class="filter-option">Pearl</button>
+                </div>
+            </div>
+            
+            <div class="filter-group">
+                <h3>Price Range</h3>
+                <div class="filter-options">
+                    <button class="filter-option active">All</button>
+                    <button class="filter-option">Under $50</button>
+                    <button class="filter-option">$50 - $200</button>
+                    <button class="filter-option">Over $200</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="sort-options">
+            <select class="sort-select">
+                <option value="featured">Featured</option>
+                <option value="price-low">Price: Low to High</option>
+                <option value="price-high">Price: High to Low</option>
+                <option value="newest">Newest First</option>
+            </select>
+        </div>
+
+        <div class="products-grid">
+            <div class="product-card">
+                <img src="../images/ring1.jpg" alt="Diamond Ring">
+                <h3>Diamond Ring</h3>
+                <p class="price">$399.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="../images/ring2.jpg" alt="Pearl Hair Clip">
+                <h3>Pearl Hair Clip</h3>
+                <p class="price">$49.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="../images/ring3.jpg" alt="Gold Anklet">
+                <h3>Gold Anklet</h3>
+                <p class="price">$129.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="../images/ring4.jpg" alt="Jewelry Box">
+                <h3>Jewelry Box</h3>
+                <p class="price">$79.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="../images/ring5.jpg" alt="Crystal Hair Pins">
+                <h3>Crystal Hair Pins</h3>
+                <p class="price">$39.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="../images/ring6.jpg" alt="Silver Anklet Set">
+                <h3>Silver Anklet Set</h3>
+                <p class="price">$89.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="../images/ring7.jpg" alt="Silver Anklet Set">
+                <h3>Silver Anklet Set</h3>
+                <p class="price">$89.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="../images/ring8.jpg" alt="Silver Anklet Set">
+                <h3>Silver Anklet Set</h3>
+                <p class="price">$89.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="pagination">
+            <button class="page-button active">1</button>
+            <button class="page-button">2</button>
+            <button class="page-button">3</button>
+            <button class="page-button">Next</button>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>Elegance brings you the finest jewelry pieces crafted with precision and care.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Shipping Policy</a></li>
+                    <li><a href="#">Returns</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email: info@elegance.com</p>
+                <p>Phone: (555) 123-4567</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Elegance. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+    <script>
+        // Filter functionality
+        const filterOptions = document.querySelectorAll('.filter-option');
+        filterOptions.forEach(option => {
+            option.addEventListener('click', () => {
+                const parent = option.parentElement;
+                parent.querySelectorAll('.filter-option').forEach(opt => opt.classList.remove('active'));
+                option.classList.add('active');
+            });
+        });
+
+        // Sort functionality
+        const sortSelect = document.querySelector('.sort-select');
+        sortSelect.addEventListener('change', () => {
+            // Implement sorting logic here
+            console.log('Sorting by:', sortSelect.value);
+        });
+
+        // Pagination
+        const pageButtons = document.querySelectorAll('.page-button');
+        pageButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                pageButtons.forEach(btn => btn.classList.remove('active'));
+                button.classList.add('active');
+                // Implement pagination logic here
+            });
+        });
+    </script>
+</body>
+</html> 
