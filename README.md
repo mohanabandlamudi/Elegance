@@ -1,4 +1,5 @@
 # Elegance - Premium Jewelry Shopping Website
+Website: https://mohanabandlamudi.github.io/Elegance/
 
 A modern, responsive jewelry shopping website built with HTML, CSS, and JavaScript. The website features a beautiful design with multiple pages for different jewelry categories.
 
